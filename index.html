@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/premium-photo/dice-yellow-background_127657-13646.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #dice1{
+            position: relative;
+            top: 108px;
+            left: 500px;
+            border: 2px solid black;
+            /* padding: 10px; */
+            font-size: larger;
+            font-weight: 100;
+        }
+
+        .dice{
+            height: 80px;
+            width: 95px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #dice2{
+            position: relative;
+            top: 28px;
+            left: 800px;
+            border: 2px solid black;
+            font-size: larger;
+            font-weight: 100;
+
+
+
+        }
+
+        #comments{
+            position: relative;
+            top: 60px;
+            /* right: 150px; */
+            justify-content: center;
+            text-align: center;
+        }
+
+        .column {
+            position: relative;
+            top: 50px;
+        }
+        button{
+            position: relative;
+            top: 200px;
+            left: 560px;
+   
+        }
+
+        .btn1{
+            border-radius: 10px;
+
+        }
+        .btn2{
+            margin-left: 20px;
+            border-radius: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .btn2:hover{
+            padding: 2px;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+
+        #demo{
+            z-index: 1;
+            position: absolute;
+            left: 200px;
+            bottom: 100px ;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/diceroll.js" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+        <h1>Dice Game</h1>
+
+        <div class="flex-container">
+            <div class="column">
+                <div id="dice1" class="dice"><h3>Player 1</h3></div>
+                <div id="dice2" class="dice"><h3>Player 2</h3></div>
+            </div>
+        </div>
+
+        <button class="btn1" onclick="runDiceRoll()">Roll Dice</button>
+        <button class="btn2" onclick="runPrank()">Don't Click Me!</button>
+        <div><h2 id="comments">Result:</h2></div>
+        <p id="demo"></p>
+
+
+        <script src="diceroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
